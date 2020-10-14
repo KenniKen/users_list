@@ -1,0 +1,27 @@
+users_data = []
+
+
+10.times do
+
+  print "Enter your name: "
+  user_name = gets.chomp
+
+  print "Enter your age: "
+  user_age = gets.chomp.to_i
+
+  print "Enter your email: "
+  user_email = gets.chomp
+
+ 
+  print "#{[user_name]} #{[user_age]} #{[user_email]}\n"
+
+  puts "=============================="
+
+
+  user_data =  [ [user_name], [user_age], [user_email] ]
+
+  users_data << user_data 
+
+end
+
+users_data.each { |user| puts user }
